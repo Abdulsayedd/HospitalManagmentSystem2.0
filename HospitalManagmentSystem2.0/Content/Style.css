@@ -1,0 +1,133 @@
+﻿body {
+    background-color: #232946;
+    color: #fffffe;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    color: #232946;
+    background-color: #eebbc3;
+    border-color: #eebbc3;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    button:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover {
+        background-color: #ebc3b1;
+        border-color: #ebc3b1;
+        cursor: pointer;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fffffe;
+    font-weight: bold;
+}
+
+p {
+    color: #b8c1ec;
+    line-height: 1.5;
+}
+
+.container {
+    background-color: #232946;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron {
+    background-color: #232946;
+    color: #fffffe;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #eebbc3;
+}
+
+    a:hover {
+        color: #ebb5a9;
+        text-decoration: underline;
+    }
+
+/* Custom reactions */
+
+.like {
+    cursor: pointer;
+    color: #eebbc3;
+}
+
+    .like:hover {
+        color: #ebb5a9;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+.love {
+    cursor: pointer;
+    color: #eebbc3;
+}
+
+    .love:hover {
+        color: #ebb5a9;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+.haha {
+    cursor: pointer;
+    color: #eebbc3;
+}
+
+    .haha:hover {
+        color: #ebb5a9;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+.wow {
+    cursor: pointer;
+    color: #eebbc3;
+}
+
+    .wow:hover {
+        color: #ebb5a9;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+.sad {
+    cursor: pointer;
+    color: #eebbc3;
+}
+
+    .sad:hover {
+        color: #ebb5a9;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+.angry {
+    cursor: pointer;
+    color: #eebbc3;
+}
+
+    .angry:hover {
+        color: #ebb5a9;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+.readonly {
+    background-color: #f2f2f2; /* Gray background color */
+    color: #555; /* Text color */
+    /* Add any additional styling as needed */
+}

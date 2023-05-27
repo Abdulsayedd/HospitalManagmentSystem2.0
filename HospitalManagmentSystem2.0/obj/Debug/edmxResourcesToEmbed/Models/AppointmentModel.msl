@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AppointmentModelStoreContainer" CdmEntityContainer="AppointmentEntities">
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="AppointmentModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointment">
+          <ScalarProperty Name="IdAppointment" ColumnName="IdAppointment" />
+          <ScalarProperty Name="IdPatient" ColumnName="IdPatient" />
+          <ScalarProperty Name="IdDoctor" ColumnName="IdDoctor" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Medicine" ColumnName="Medicine" />
+          <ScalarProperty Name="Samples" ColumnName="Samples" />
+          <ScalarProperty Name="SamplesResults" ColumnName="SamplesResults" />
+          <ScalarProperty Name="Imaging" ColumnName="Imaging" />
+          <ScalarProperty Name="ImagingResults" ColumnName="ImagingResults" />
+          <ScalarProperty Name="Diagnoses" ColumnName="Diagnoses" />
+          <ScalarProperty Name="state" ColumnName="state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

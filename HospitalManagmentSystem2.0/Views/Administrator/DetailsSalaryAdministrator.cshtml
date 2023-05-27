@@ -1,0 +1,27 @@
+﻿<link href="@Url.Content("/Content/Style.css")" rel="stylesheet" type="text/css" />
+@model HospitalManagmentSystem2._0.Models.Salary
+
+@{
+    ViewBag.Title = "DetailsSalaryAdministrator";
+}
+
+<h2>Salary Details</h2>
+
+<div>
+    <h4>Salary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditSalaryAdministrator", new { id = Model.IdSalary }) |
+    @Html.ActionLink("Back to List", "ListSalarysAdministrator")
+</p>

@@ -1,0 +1,90 @@
+﻿<link href="@Url.Content("/Content/Style.css")" rel="stylesheet" type="text/css" />
+@model IEnumerable<HospitalManagmentSystem2._0.Models.Appointment>
+
+@{
+    ViewBag.Title = "ListAllAppointmentsAdministrator";
+}
+
+<h2>ListAllAppointmentsAdministrator</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateAppointmentsAdministrator")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdPatient)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdDoctor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Medicine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Samples)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SamplesResults)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imaging)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImagingResults)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Diagnoses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.state)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdPatient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdDoctor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Samples)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SamplesResults)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Imaging)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagingResults)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Diagnoses)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.state)
+            </td>
+            <td>
+                @Html.ActionLink("Accept", "AcceptAppointmentAdministrator", new { id = item.IdAppointment }) |
+                @Html.ActionLink("Details", "DetailsAppointmentAdministrator", new { id = item.IdAppointment }) |
+                @Html.ActionLink("Edit", "EditAppointmentAdministrator", new { id = item.IdAppointment }) |
+                @Html.ActionLink("Delete", "DeleteAppointmentAdministrator", new { id = item.IdAppointment })
+            </td>
+        </tr>
+    }
+
+</table>

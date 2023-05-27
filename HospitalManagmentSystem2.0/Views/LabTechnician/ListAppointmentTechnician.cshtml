@@ -1,0 +1,36 @@
+﻿@model IEnumerable<HospitalManagmentSystem2._0.Models.Appointment>
+
+@{
+    ViewBag.Title = "ListAppointmentTechnician";
+}
+
+<h2>ListAppointmentTechnician</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Appointment ID
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Samples)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAppointment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Samples)
+            </td>
+            <td>
+                @Html.ActionLink("Add Sample", "RecordSample", new { id = item.IdAppointment })
+            </td>
+        </tr>
+    }
+
+</table>
+<link href="@Url.Content("/Content/Style.css")" rel="stylesheet" type="text/css" />

@@ -1,0 +1,26 @@
+﻿@model HospitalManagmentSystem2._0.Models.Salary
+
+@{
+    ViewBag.Title = "DetailsSalaryManager";
+}
+
+<h2>DetailsSalaryManager</h2>
+
+<div>
+    <h4>Salary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditSalaryManager", new { id = Model.IdSalary }) 
+    @Html.ActionLink("Back to List", "ListSalarysManager")
+</p>

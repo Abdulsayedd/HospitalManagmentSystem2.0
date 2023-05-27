@@ -1,0 +1,35 @@
+﻿@model IEnumerable<HospitalManagmentSystem2._0.Models.Salary>
+
+@{
+    ViewBag.Title = "ListSalarysManager";
+}
+
+<h2>ListSalarysManager</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateSalaryManager")
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditSalaryManager", new { id=item.IdSalary }) |
+            @Html.ActionLink("Details", "DetailsSalaryManager", new { id=item.IdSalary }) |
+            @Html.ActionLink("Delete", "DeleteSalaryManager", new { id=item.IdSalary })
+        </td>
+    </tr>
+}
+
+</table>
+<link href="@Url.Content("/Content/Style.css")" rel="stylesheet" type="text / css" />

@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">Welcome To Your Account.</p>
+    <p>
+        <a id="patientappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">My Appointments</a>
+        <a id="listdoctorallappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">All Appointments</a>
+        <a id="listdoctorcurrentappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Current Appointments</a>
+        <a id="listdoctorwaitingappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Waiting Appointments</a>
+        <a id="listdoctorfinishedappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Finished Appointments</a>
+        <a id="pharmacistappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">All Appointments</a>
+        <a id="pharmacistmedicine" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Check Medicine</a>
+        <a id="receptionistappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">All Appointments</a>
+        <a id="receptionistpayment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">All Payment</a>
+        <a id="technicianappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">All Appointments</a>
+        <a id="technicianrecord" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Record Samples</a>
+        <a id="radiologistappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">All Appointments</a>
+        <a id="radiologistrecord" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Record imaging</a>
+        <a id="nurseappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">All Appointments</a>
+        <a id="managerappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Appointments</a>
+        <a id="manageraccount" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Accounts</a>
+        <a id="managerpayment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Payments</a>
+        <a id="managersalary" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Salaries</a>
+        <a id="managermedicine" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Medicine</a>
+        <a id="administratorappointment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Appointments</a>
+        <a id="administratoraccount" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Accounts</a>
+        <a id="administratorpayment" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Payments</a>
+        <a id="administratorsalary" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Salaries</a>
+        <a id="administratormedicine" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Medicine</a>
+        <a id="administratormanagers" class="btn btn-primary btn-lg" data-usertype="@Session["UserType"]">Manage Menagers</a>
+
+
+    </p>
+</div>
+
+<script src="@Url.Content("~/Scripts/checkappointmenttype.js")"></script>

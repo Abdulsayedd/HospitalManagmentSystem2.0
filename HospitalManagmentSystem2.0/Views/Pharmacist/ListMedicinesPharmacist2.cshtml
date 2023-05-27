@@ -1,0 +1,34 @@
+﻿@model IEnumerable<HospitalManagmentSystem2._0.Models.Medicine>
+
+@{
+    ViewBag.Title = "ListMedicinesPharmacist2";
+}
+
+<h2>ListMedicinesPharmacist2</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MedicineName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MedicineCount)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicineName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedicineCount)
+            </td>
+            <td>
+                @Html.ActionLink("Get Medicine", "MedicineReduce", new { id = item.IdMedicine })
+            </td>
+        </tr>
+    }
+
+</table>

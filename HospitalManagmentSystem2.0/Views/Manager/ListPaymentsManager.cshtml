@@ -1,0 +1,41 @@
+﻿<link href="@Url.Content("/Content/Style.css")" rel="stylesheet" type="text/css" />
+@model IEnumerable<HospitalManagmentSystem2._0.Models.Payment>
+
+@{
+    ViewBag.Title = "ListPaymentsManager";
+}
+
+<h2>ListPaymentsManager</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreatePaymentManager")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Paid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditPaymentManager", new { id = item.IdPayment }) |
+                @Html.ActionLink("Details", "DetailsPaymentManager", new { id = item.IdPayment }) |
+                @Html.ActionLink("Delete", "DeletePaymentManager", new { id = item.IdPayment })
+            </td>
+        </tr>
+    }
+
+</table>

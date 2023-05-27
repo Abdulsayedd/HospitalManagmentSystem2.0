@@ -1,0 +1,57 @@
+﻿@model HospitalManagmentSystem2._0.Models.SampleAppointment
+
+@{
+    ViewBag.Title = "DetailsSample";
+}
+
+<h2>DetailsSample</h2>
+
+<div>
+    <h4>SampleAppointment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SampleID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SampleID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlainSerum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlainSerum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDTAplasma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDTAplasma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDTAwholeblood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDTAwholeblood)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AllBloodSamples)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AllBloodSamples)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "ListCurrentAppointmentDoctor")
+</p>

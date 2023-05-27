@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SampleAppointmentModelStoreContainer" CdmEntityContainer="SampleAppointmentEntities">
+    <EntitySetMapping Name="SampleAppointments">
+      <EntityTypeMapping TypeName="SampleAppointmentModel.SampleAppointment">
+        <MappingFragment StoreEntitySet="SampleAppointment">
+          <ScalarProperty Name="SampleID" ColumnName="SampleID" />
+          <ScalarProperty Name="AppointmentID" ColumnName="AppointmentID" />
+          <ScalarProperty Name="PlainSerum" ColumnName="PlainSerum" />
+          <ScalarProperty Name="EDTAplasma" ColumnName="EDTAplasma" />
+          <ScalarProperty Name="EDTAwholeblood" ColumnName="EDTAwholeblood" />
+          <ScalarProperty Name="AllBloodSamples" ColumnName="AllBloodSamples" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
