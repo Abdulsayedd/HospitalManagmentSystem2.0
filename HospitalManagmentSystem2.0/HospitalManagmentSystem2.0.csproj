@@ -179,6 +179,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppointmentModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\ImageAppointment.cs">
+      <DependentUpon>ImageAppointmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageAppointmentModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageAppointmentModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageAppointmentModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageAppointmentModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ImageAppointmentModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageAppointmentModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Medicine.cs">
       <DependentUpon>MedicineModel.tt</DependentUpon>
     </Compile>
@@ -302,6 +320,16 @@
       <DependentUpon>AppointmentModel.edmx</DependentUpon>
       <LastGenOutput>AppointmentModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\ImageAppointmentModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ImageAppointmentModel.edmx</DependentUpon>
+      <LastGenOutput>ImageAppointmentModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ImageAppointmentModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ImageAppointmentModel.edmx</DependentUpon>
+      <LastGenOutput>ImageAppointmentModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\MedicineModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MedicineModel.edmx</DependentUpon>
@@ -402,6 +430,13 @@
     </EntityDeploy>
     <Content Include="Models\SampleAppointmentModel.edmx.diagram">
       <DependentUpon>SampleAppointmentModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\ImageAppointmentModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ImageAppointmentModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ImageAppointmentModel.edmx.diagram">
+      <DependentUpon>ImageAppointmentModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\checkappointmenttype.js" />
@@ -512,10 +547,11 @@
     <Content Include="Views\LabTechnician\ListAppointmentTechnician.cshtml" />
     <Content Include="Views\LabTechnician\RecordSample.cshtml" />
     <Content Include="Views\Doctor\DetailsSample.cshtml" />
+    <Content Include="Views\Radiologist\ListAppointmentRadiologist.cshtml" />
+    <Content Include="Views\Radiologist\RecordImaging.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Radiologist\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

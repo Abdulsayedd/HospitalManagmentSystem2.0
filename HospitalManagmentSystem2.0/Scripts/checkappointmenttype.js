@@ -96,8 +96,8 @@ if (userType === "Technician") {
 
 if (userType === "Radiologist")
 {
-    pageLink9.href = "ListAppointmentRadiologist";
-    pageLink10.href = "RecordImaging";
+    pageLink9.href = "/Radiologist/ListAppointmentRadiologist";
+    pageLink10.href = "/Radiologist/RecordImaging";
     pageLink9.style.display = "inline-block";
     pageLink10.style.display = "inline-block";
 }

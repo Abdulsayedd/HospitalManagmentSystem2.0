@@ -17,12 +17,14 @@ namespace HospitalManagmentSystem2._0.Controllers
         {
             return View();
         }
+
         #region ListAppointmentTechnician
         public ActionResult ListAppointmentTechnician()
         {
             return View(AppointmentConnection.Appointments.Where(a=>(a.Samples==null || a.Samples=="")&&a.state==1 ).ToList());
         }
         #endregion
+
         #region recordsamples
         [HttpGet]
         public ActionResult RecordSample(int id)

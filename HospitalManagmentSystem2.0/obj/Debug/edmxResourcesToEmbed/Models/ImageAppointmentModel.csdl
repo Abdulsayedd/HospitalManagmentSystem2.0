@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ImageAppointmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ImageAppointment">
+    <Key>
+      <PropertyRef Name="AppointmentID" />
+    </Key>
+    <Property Name="ImageID" Type="Int32" />
+    <Property Name="AppointmentID" Type="Int32" Nullable="false" />
+    <Property Name="Ni" Type="Int32" />
+    <Property Name="Cr" Type="Int32" />
+    <Property Name="Mo" Type="Int32" />
+    <Property Name="Al" Type="Int32" />
+    <Property Name="Ti" Type="Int32" />
+    <Property Name="Nb" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ImageAppointmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ImageAppointments" EntityType="Self.ImageAppointment" />
+  </EntityContainer>
+</Schema>
