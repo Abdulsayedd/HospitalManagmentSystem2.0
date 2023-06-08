@@ -22,4 +22,28 @@ A Hospital Management System (HMS) is a digital platform designed to streamline 
 - **Electronic Medical Records (EMR):** Maintain electronic medical records for patients.
 - **Inventory Management:** Manage inventory of medications and supplies.
 - **Billing and Payment Processing:** Handle billing and payment processing for patients.
-- **Reporting and Analytics:** Generate reports and perform data analysis.
+
+## Database Structure 📚
+
+- **Account:** Stores user account information.
+  - Columns: id, username, password, mail, name, age, address, mobilenumber, gender, type.
+- **Salary:** Stores salary information for different roles.
+  - Columns: id, salary.
+- **Payment:** Stores payment information.
+  - Columns: id, paid, amount.
+- **Appointment:** Stores appointment details.
+  - Columns: IdAppointment, IdPatient, IdDoc, date, medicine, samples, sample results, imaging, imaging results, diagnoses, state (finished or not).
+- **Medicine:** Stores medicine inventory information.
+  - Columns: IdMedicine, MedicineName, MedicineCount.
+
+## User Permissions 👥
+
+- **Patient:** Login, view, create, edit, and delete appointments, and pay bills.
+- **Receptionist:** Login, view, create, edit, and delete appointments.
+- **Doctor:** Login, view, create, edit, and delete appointments with details.
+- **Technician:** Login, edit appointment samples and records.
+- **Pharmacist:** Login, manage medicine inventory.
+- **Nurses:** Login, view appointments.
+- **Radiologist:** Login, run imaging, record results.
+- **Managers:** Login, view, create, edit, and delete every database except admin.
+- **Admin:** Login, view, create, edit, and delete every database.
