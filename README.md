@@ -1,6 +1,6 @@
 # Hospital Management System (HMS) 🏥
 
-A Hospital Management System (HMS) is a digital platform designed to streamline the operations and management of a hospital. It helps hospital managers to manage patient information, appointment scheduling, electronic medical records, inventory management, billing and payment processing, reporting and analytics, and other related tasks.
+A Hospital Management System (HMS) is a digital platform designed to streamline the operations and management of a hospital. It helps hospital managers to manage patient information, appointment scheduling, electronic medical records, inventory management, billing and payment processing, reporting and analytics, and other related tasks, (ASP.NET Web Application + MySQL).
 
 ## System Actors 🎭
 
